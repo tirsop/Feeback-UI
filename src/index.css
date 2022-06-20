@@ -11,6 +11,7 @@ body {
   background-color: #202142;
   color: #fff;
   line-height: 1.6;
+  margin-bottom: 80px;
 }
 
 ul {
@@ -190,7 +191,7 @@ input:focus {
 .about-link {
   /* display: flex; */
   /* justify-content: flex-end; */
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   padding: 24px;
