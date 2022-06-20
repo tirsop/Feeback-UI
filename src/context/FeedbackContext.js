@@ -7,7 +7,7 @@ export const FeedbackProvider = ({ children }) => {
   const [feedback, setFeedback] = useState([
     {
       id: 1,
-      text: "This Feedback App works great! I can use this code to allow users to rate my products. It is build with React using hooks (useState, useContext, useEffect), it has styling components and uses the React router",
+      text: "This Feedback App works great! I can use this code to allow users to rate my products. It is build with React using hooks (useState, useContext, useEffect), it has styling components and uses the React router.",
       rating: 10
     },
   ]);
