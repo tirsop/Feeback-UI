@@ -1,15 +1,24 @@
 import { v4 as uuidv4 } from 'uuid';
 import { createContext, useState } from "react";
+import useLocalStorage from "use-local-storage";
 
 const FeedbackContext = createContext()
 
 export const FeedbackProvider = ({ children }) => {
-  const [feedback, setFeedback] = useState([
+  // // lines 9~15 dissapear when  refresh. Lines 16~22 use local storage to keeep the new comments
+  // const [feedback, setFeedback] = useState([
+  //   {
+  //     id: 1,
+  //     text: "This Feedback App works great! I can use this code to allow users to rate my products. It is build with React using hooks (useState, useContext, useEffect), it has styling components and uses the React router.",
+  //     rating: 10
+  //   },
+  // ]);
+  const [feedback, setFeedback] = useLocalStorage("feedback", [
     {
       id: 1,
       text: "This Feedback App works great! I can use this code to allow users to rate my products. It is build with React using hooks (useState, useContext, useEffect), it has styling components and uses the React router.",
       rating: 10
-    },
+    }
   ]);
 
   const [feedbackEdit, setFeedbackEdit] = useState({
