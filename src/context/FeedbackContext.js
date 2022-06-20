@@ -7,18 +7,8 @@ export const FeedbackProvider = ({ children }) => {
   const [feedback, setFeedback] = useState([
     {
       id: 1,
-      text: "This item is from Context 1",
-      rating: 4
-    },
-    {
-      id: 2,
-      text: "This item is from Context 2",
-      rating: 9
-    },
-    {
-      id: 3,
-      text: "This item is from Context 3",
-      rating: 7
+      text: "This Feedback App works great! I can use this code to allow users to rate my products. It is build with React using hooks (useState, useContext, useEffect), it has styling components and uses the React router.",
+      rating: 10
     },
   ]);
 
